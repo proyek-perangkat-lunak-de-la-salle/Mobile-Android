@@ -11,5 +11,9 @@
         <item>St.Petrus</item>
         <item>St.Paulus</item>
     </array>
+    <string name="title_activity_general_user">GeneralUserActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
 
 </resources>
