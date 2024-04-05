@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:padding="16dp"
+    tools:context=".RegisterActivity">
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/logo"
+        app:layout_constraintBottom_toTopOf="@id/nama_edt_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/nama_edt_layout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="Masukan Nama Pengguna"
+        app:layout_constraintEnd_toEndOf="@id/iv_logo"
+        app:layout_constraintStart_toStartOf="@id/iv_logo"
+        app:layout_constraintTop_toBottomOf="@id/iv_logo"
+        android:layout_marginHorizontal="8dp"
+        tools:alpha="100">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/nama_edt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/username_edt_layout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="Masukan Username"
+        app:layout_constraintEnd_toEndOf="@id/nama_edt_layout"
+        app:layout_constraintStart_toStartOf="@id/nama_edt_layout"
+        app:layout_constraintTop_toBottomOf="@id/nama_edt_layout"
+        android:layout_marginHorizontal="8dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/username_edt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/email_edt_layout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="Masukan Email"
+        app:layout_constraintEnd_toEndOf="@id/username_edt_layout"
+        app:layout_constraintStart_toStartOf="@id/username_edt_layout"
+        app:layout_constraintTop_toBottomOf="@id/username_edt_layout"
+        android:layout_marginHorizontal="8dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/email_edt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textEmailAddress" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tipe_pengguna_edt_layout"
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="Pilih Tipe Pengguna"
+        app:layout_constraintEnd_toEndOf="@id/email_edt_layout"
+        app:layout_constraintStart_toStartOf="@id/email_edt_layout"
+        app:layout_constraintTop_toBottomOf="@id/email_edt_layout"
+        android:layout_marginHorizontal="8dp">
+
+        <AutoCompleteTextView
+            android:id="@+id/autoCompleteTipePengguna"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="none"
+            app:simpleItems="@array/tipe_pengguna" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/pilih_wilayah_layout"
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="Pilih Wilayah"
+        app:layout_constraintEnd_toEndOf="@id/tipe_pengguna_edt_layout"
+        app:layout_constraintStart_toStartOf="@id/tipe_pengguna_edt_layout"
+        app:layout_constraintTop_toBottomOf="@id/tipe_pengguna_edt_layout"
+        android:layout_marginHorizontal="8dp">
+
+        <AutoCompleteTextView
+            android:id="@+id/autoCompletePilihWilayah"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="none"
+            app:simpleItems="@array/pilih_wilayah" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/password_edt_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="Masukan Password"
+        app:endIconMode="password_toggle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pilih_wilayah_layout"
+        android:layout_marginHorizontal="8dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/password_edt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/konfirmasi_password_edt_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="Konfirmasi Password"
+        app:endIconMode="password_toggle"
+        app:layout_constraintEnd_toEndOf="@id/password_edt_layout"
+        app:layout_constraintStart_toStartOf="@id/password_edt_layout"
+        app:layout_constraintTop_toBottomOf="@id/password_edt_layout"
+        android:layout_marginHorizontal="8dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/konfirmasi_password_edt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPassword" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Daftar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/password_edt_layout"
+        app:layout_constraintStart_toStartOf="@id/konfirmasi_password_edt_layout"
+        app:layout_constraintTop_toBottomOf="@id/konfirmasi_password_edt_layout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">HealthCare</string>
+    <string name="masukan_nama_pengguna">Masukan nama pengguna</string>
+    <array name="tipe_pengguna">
+        <item>Pengguna Umum</item>
+        <item>Admin Wilayah</item>
+        <item>Admin Paroki</item>
+    </array>
+
+    <array name="pilih_wilayah">
+        <item>St.Petrus</item>
+        <item>St.Paulus</item>
+    </array>
+
+</resources>
