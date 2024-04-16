@@ -8,11 +8,82 @@
     </array>
 
     <array name="pilih_wilayah">
-        <item>St.Petrus</item>
-        <item>St.Paulus</item>
+        <item>St. Petrus</item>
+        <item>St. Joseph</item>
+        <item>Sta. Cecilia</item>
+        <item>Pacelli</item>
+        <item>Sta. Barbara</item>
+        <item>Sta. Lucia</item>
+        <item>Sta. Faustina</item>
+        <item>Sarto</item>
+        <item>Sta. Agatha</item>
+        <item>St. Yohanes</item>
+        <item>Sta. Theresia Lisieux</item>
+        <item>St. Paulus</item>
+        <item>St. Antonius</item>
+        <item>Sta. Theresia Avilla</item>
+        <item>Bunda Hati Kudus</item>
     </array>
+
+    <array name="umur">
+        <item>15-25 tahun</item>
+        <item>26-35 tahun</item>
+        <item>36-45 tahun</item>
+        <item>>46 tahun</item>
+    </array>
+
+    <array name="jenis_kelamin">
+        <item>Pria</item>
+        <item>Wanita</item>
+    </array>
+
+    <array name="tinggi_badan">
+        <item>140 cm - 148 cm</item>
+        <item>148 cm - 156 cm</item>
+        <item>156 cm - 164 cm</item>
+        <item>164 cm - 172 cm</item>
+        <item>172 cm - 180 cm</item>
+    </array>
+    
+    <array name="berat_badan">
+        <item>35 kg - 47 kg</item>
+        <item>48 kg - 60 kg</item>
+        <item>61 kg - 73 kg</item>
+        <item>74 kg - 86 kg</item>
+        <item>87 kg - 99 kg</item>
+    </array>
+    
+    <array name="yes_or_no">
+        <item>Ya</item>
+        <item>Tidak</item>
+    </array>
+
+    <array name="paham">
+        <item>Tidak Paham</item>
+        <item>Cukup Paham</item>
+        <item>Sangat Paham</item>
+    </array>
+
+    <array name="nyeri">
+        <item>Tidak Nyeri</item>
+        <item>Cukup Nyeri</item>
+        <item>Sangat Nyeri</item>
+    </array>
+    
+    <array name="mual">
+        <item>Tidak Mual</item>
+        <item>Cukup Mual</item>
+        <item>Sangat Mual</item>
+    </array>
+
+    <array name="sesak">
+        <item>Tidak Sesak Napas</item>
+        <item>Cukup Sesak Napas</item>
+        <item>Sangat Sesak Napas</item>
+    </array>
+
     <string name="title_activity_general_user">GeneralUserActivity</string>
-    <string name="title_home">Home</string>
+    <string name="title_home">Kuesioner PJK</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
 
