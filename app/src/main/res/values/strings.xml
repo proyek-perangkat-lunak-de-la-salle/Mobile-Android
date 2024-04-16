@@ -85,6 +85,6 @@
     <string name="title_activity_general_user">GeneralUserActivity</string>
     <string name="title_home">Kuesioner PJK</string>
     <string name="title_dashboard">Statistik Wilayah dan Paroki</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="title_notifications">Riwayat Deteksi</string>
 
 </resources>
