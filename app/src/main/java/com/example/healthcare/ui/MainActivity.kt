@@ -1,4 +1,4 @@
-package com.example.healthcare
+package com.example.healthcare.ui
 
 import android.content.Intent
 import android.os.Bundle
@@ -6,6 +6,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.example.healthcare.R
 import com.example.healthcare.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -24,7 +25,6 @@ class MainActivity : AppCompatActivity() {
         binding.tvRegister.setOnClickListener {
             startActivity(Intent(this@MainActivity, RegisterActivity::class.java))
         }
-
 
     }
 }
