@@ -44,7 +44,7 @@
         <item>164 cm - 172 cm</item>
         <item>172 cm - 180 cm</item>
     </array>
-    
+
     <array name="berat_badan">
         <item>35 kg - 47 kg</item>
         <item>48 kg - 60 kg</item>
@@ -52,7 +52,7 @@
         <item>74 kg - 86 kg</item>
         <item>87 kg - 99 kg</item>
     </array>
-    
+
     <array name="yes_or_no">
         <item>Ya</item>
         <item>Tidak</item>
@@ -69,7 +69,7 @@
         <item>Cukup Nyeri</item>
         <item>Sangat Nyeri</item>
     </array>
-    
+
     <array name="mual">
         <item>Tidak Mual</item>
         <item>Cukup Mual</item>
