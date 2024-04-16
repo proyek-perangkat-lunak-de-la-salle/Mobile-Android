@@ -19,8 +19,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingBottom="60dp"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:paddingBottom="60dp">
 
             <TextView
                 android:id="@+id/tv_data_diri_pertanyaan_pjk"
@@ -312,11 +312,10 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
                 android:layout_marginVertical="30dp"
-                android:text="submit"
-                android:layout_marginHorizontal="8dp"/>
+                android:text="submit" />
         </LinearLayout>
-
 
     </ScrollView>
 
