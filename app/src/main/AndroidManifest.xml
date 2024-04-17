@@ -13,6 +13,9 @@
         android:theme="@style/Theme.HealthCare"
         tools:targetApi="31">
         <activity
+            android:name=".staff.UploadCsvStaffActivity"
+            android:exported="false" />
+        <activity
             android:name=".staff.StatistikWilayahStaffActivity"
             android:exported="false" />
         <activity
