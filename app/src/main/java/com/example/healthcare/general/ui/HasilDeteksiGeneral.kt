@@ -1,10 +1,11 @@
-package com.example.healthcare
+package com.example.healthcare.general.ui
 
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.example.healthcare.R
 
 class HasilDeteksiGeneral : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

@@ -1,4 +1,4 @@
-package com.example.healthcare.ui.dashboard
+package com.example.healthcare.general.ui.kuesioner
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -6,11 +6,11 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import com.example.healthcare.databinding.FragmentStatistikWilayahBinding
+import com.example.healthcare.databinding.FragmentQuestionerBinding
 
-class StatistikWilayahFragment : Fragment() {
+class QuestionerFragment : Fragment() {
 
-    private var _binding: FragmentStatistikWilayahBinding? = null
+    private var _binding: FragmentQuestionerBinding? = null
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -21,10 +21,10 @@ class StatistikWilayahFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val dashboardViewModel =
-            ViewModelProvider(this).get(DashboardViewModel::class.java)
+        val homeViewModel =
+            ViewModelProvider(this).get(HomeViewModel::class.java)
 
-        _binding = FragmentStatistikWilayahBinding.inflate(inflater, container, false)
+        _binding = FragmentQuestionerBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
 

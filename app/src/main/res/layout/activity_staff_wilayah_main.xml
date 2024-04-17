@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bg"
-    tools:context=".StaffWilayahActivity">
+    tools:context=".staff.StaffWilayahMainActivity">
 
     <FrameLayout
         android:id="@+id/frame_layout"
@@ -47,7 +47,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="16dp"
                 android:layout_marginVertical="16dp"
-                android:text="Jonathan Kamagi"
+                android:text="Halo, Jonathan Kamagi"
                 android:textColor="@color/white"
                 android:textSize="24sp"
                 android:textStyle="bold"
@@ -88,6 +88,7 @@
 
             <TextView
                 android:layout_width="match_parent"
+                android:textSize="16sp"
                 android:layout_height="wrap_content"
                 android:text="Statistik Wilayah"
                 android:textAlignment="center" />
@@ -109,9 +110,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Upload CSV"
+                android:textSize="16sp"
                 android:textAlignment="center" />
         </LinearLayout>
-
 
     </LinearLayout>
 

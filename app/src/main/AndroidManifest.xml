@@ -13,13 +13,13 @@
         android:theme="@style/Theme.HealthCare"
         tools:targetApi="31">
         <activity
-            android:name=".StaffWilayahActivity"
+            android:name=".staff.StaffWilayahMainActivity"
             android:exported="false" />
         <activity
-            android:name=".HasilDeteksiGeneral"
+            android:name=".general.ui.HasilDeteksiGeneral"
             android:exported="false" />
         <activity
-            android:name=".GeneralUserActivity"
+            android:name=".general.ui.GeneralUserActivity"
             android:exported="false"
             android:label="@string/title_activity_general_user" />
         <activity
