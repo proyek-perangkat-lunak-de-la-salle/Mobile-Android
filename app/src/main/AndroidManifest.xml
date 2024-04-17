@@ -13,6 +13,9 @@
         android:theme="@style/Theme.HealthCare"
         tools:targetApi="31">
         <activity
+            android:name=".staff.HasilDeteksiStaffActivity"
+            android:exported="false" />
+        <activity
             android:name=".staff.UploadCsvStaffActivity"
             android:exported="false" />
         <activity
@@ -22,7 +25,7 @@
             android:name=".staff.StaffWilayahMainActivity"
             android:exported="false" />
         <activity
-            android:name=".general.ui.HasilDeteksiGeneral"
+            android:name=".general.ui.HasilDeteksiGeneralActivity"
             android:exported="false" />
         <activity
             android:name=".general.ui.GeneralUserActivity"
