@@ -1,34 +1,21 @@
 package com.example.healthcare.staff
 
-import android.content.Intent
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.healthcare.R
-import com.example.healthcare.databinding.ActivityStaffWilayahMainBinding
 
-class StaffWilayahMainActivity : AppCompatActivity() {
-
-    private lateinit var binding: ActivityStaffWilayahMainBinding
+class StatistikWilayahStaffActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityStaffWilayahMainBinding.inflate(layoutInflater)
         enableEdgeToEdge()
-        setContentView(binding.root)
+        setContentView(R.layout.activity_statistik_wilayah_staff)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
-        }
-
-        binding.ivStatistikWilayah.setOnClickListener {
-            startActivity(Intent(this@StaffWilayahMainActivity, StatistikWilayahStaffActivity::class.java))
-        }
-
-        binding.ivUploadCsv.setOnClickListener {
-
         }
     }
 }
