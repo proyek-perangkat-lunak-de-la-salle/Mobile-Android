@@ -13,7 +13,7 @@
         android:theme="@style/Theme.HealthCare"
         tools:targetApi="31">
         <activity
-            android:name=".admin.HasilDeteksiAdminActivity"
+            android:name=".ui.admin.HasilDeteksiAdminActivity"
             android:exported="false" />
         <activity
 <<<<<<< HEAD
@@ -22,31 +22,31 @@
             android:name=".admin.StatistikParokiAdminActivity"
             android:exported="false" />
         <activity
-            android:name=".admin.UploadCsvAdminActivity"
+            android:name=".ui.admin.UploadCsvAdminActivity"
             android:exported="false" />
         <activity
-            android:name=".admin.StatistikWilayahAdminActivity"
+            android:name=".ui.admin.StatistikWilayahAdminActivity"
             android:exported="false" />
         <activity
-            android:name=".admin.AdminMainActivity"
+            android:name=".ui.admin.AdminMainActivity"
             android:exported="false" />
         <activity
-            android:name=".staff.HasilDeteksiStaffActivity"
+            android:name=".ui.staff.HasilDeteksiStaffActivity"
             android:exported="false" />
         <activity
-            android:name=".staff.UploadCsvStaffActivity"
+            android:name=".ui.staff.UploadCsvStaffActivity"
             android:exported="false" />
         <activity
-            android:name=".staff.StatistikWilayahStaffActivity"
+            android:name=".ui.staff.StatistikWilayahStaffActivity"
             android:exported="false" />
         <activity
-            android:name=".staff.StaffWilayahMainActivity"
+            android:name=".ui.staff.StaffWilayahMainActivity"
             android:exported="false" />
         <activity
-            android:name=".general.ui.HasilDeteksiGeneralActivity"
+            android:name=".ui.general.fragment.HasilDeteksiGeneralActivity"
             android:exported="false" />
         <activity
-            android:name=".general.ui.GeneralUserActivity"
+            android:name=".ui.general.fragment.GeneralUserActivity"
             android:exported="false"
             android:label="@string/title_activity_general_user" />
         <activity

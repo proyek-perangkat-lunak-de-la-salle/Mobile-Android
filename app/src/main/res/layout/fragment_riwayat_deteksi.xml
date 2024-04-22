@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".general.ui.riwayat.RiwayatDeteksiFragment">
+    tools:context=".ui.general.fragment.riwayat.RiwayatDeteksiFragment">
 
     <androidx.recyclerview.widget.RecyclerView
         android:padding="8dp"

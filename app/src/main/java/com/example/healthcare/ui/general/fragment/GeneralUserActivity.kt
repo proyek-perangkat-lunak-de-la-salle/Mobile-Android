@@ -1,4 +1,4 @@
-package com.example.healthcare.general.ui
+package com.example.healthcare.ui.general.fragment
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity

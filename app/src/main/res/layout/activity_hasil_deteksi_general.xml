@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bg"
-    tools:context=".general.ui.HasilDeteksiGeneralActivity">
+    tools:context=".ui.general.fragment.HasilDeteksiGeneralActivity">
 
     <com.google.android.material.appbar.MaterialToolbar
         android:id="@+id/toolbar"

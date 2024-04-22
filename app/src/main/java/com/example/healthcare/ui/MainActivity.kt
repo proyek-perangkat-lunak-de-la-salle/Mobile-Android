@@ -8,7 +8,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.healthcare.R
 import com.example.healthcare.databinding.ActivityMainBinding
-import com.example.healthcare.general.ui.GeneralUserActivity
+import com.example.healthcare.ui.general.fragment.GeneralUserActivity
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
@@ -29,12 +29,10 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this@MainActivity, RegisterActivity::class.java))
         }
 
-<<<<<<< HEAD:app/src/main/java/com/example/healthcare/ui/MainActivity.kt
-=======
+
         binding.btnLogin.setOnClickListener {
             startActivity(Intent(this, GeneralUserActivity::class.java))
         }
 
->>>>>>> general:app/src/main/java/com/example/healthcare/MainActivity.kt
     }
 }

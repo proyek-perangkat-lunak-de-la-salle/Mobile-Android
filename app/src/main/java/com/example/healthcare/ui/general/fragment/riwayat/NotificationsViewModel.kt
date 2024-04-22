@@ -1,4 +1,4 @@
-package com.example.healthcare.general.ui.riwayat
+package com.example.healthcare.ui.general.fragment.riwayat
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

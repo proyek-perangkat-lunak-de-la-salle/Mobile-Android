@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:background="@drawable/bg"
     android:layout_height="match_parent"
-    tools:context=".staff.UploadCsvStaffActivity">
+    tools:context=".ui.staff.UploadCsvStaffActivity">
 
 
     <com.google.android.material.appbar.MaterialToolbar

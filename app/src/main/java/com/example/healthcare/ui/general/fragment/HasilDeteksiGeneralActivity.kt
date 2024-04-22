@@ -1,4 +1,4 @@
-package com.example.healthcare.admin
+package com.example.healthcare.ui.general.fragment
 
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
@@ -7,11 +7,11 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.healthcare.R
 
-class StatistikParokiAdminActivity : AppCompatActivity() {
+class HasilDeteksiGeneralActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_statistik_paroki_admin)
+        setContentView(R.layout.activity_hasil_deteksi_general)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)

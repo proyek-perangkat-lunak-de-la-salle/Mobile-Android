@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bg"
-    tools:context=".general.ui.kuesioner.QuestionerFragment">
+    tools:context=".ui.general.fragment.kuesioner.QuestionerFragment">
 
     <ScrollView
         android:id="@+id/scroll_view"

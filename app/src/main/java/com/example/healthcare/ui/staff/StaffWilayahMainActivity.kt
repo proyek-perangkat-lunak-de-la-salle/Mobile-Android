@@ -1,4 +1,4 @@
-package com.example.healthcare.staff
+package com.example.healthcare.ui.staff
 
 import android.content.Intent
 import android.os.Bundle
