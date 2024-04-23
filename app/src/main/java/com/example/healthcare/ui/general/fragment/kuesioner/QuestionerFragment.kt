@@ -21,8 +21,8 @@ class QuestionerFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val homeViewModel =
-            ViewModelProvider(this).get(HomeViewModel::class.java)
+        val  questionerViewModel =
+            ViewModelProvider(this)[QuestionerViewModel::class.java]
 
         _binding = FragmentQuestionerBinding.inflate(inflater, container, false)
         val root: View = binding.root
@@ -30,6 +30,7 @@ class QuestionerFragment : Fragment() {
 
         return root
     }
+
 
     override fun onDestroyView() {
         super.onDestroyView()

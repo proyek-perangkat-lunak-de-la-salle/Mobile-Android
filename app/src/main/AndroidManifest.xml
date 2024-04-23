@@ -16,10 +16,7 @@
             android:name=".ui.admin.HasilDeteksiAdminActivity"
             android:exported="false" />
         <activity
-<<<<<<< HEAD
-            android:name=".ui.RegisterActivity"
-=======
-            android:name=".admin.StatistikParokiAdminActivity"
+            android:name=".ui.admin.StatistikParokiAdminActivity"
             android:exported="false" />
         <activity
             android:name=".ui.admin.UploadCsvAdminActivity"
@@ -50,8 +47,7 @@
             android:exported="false"
             android:label="@string/title_activity_general_user" />
         <activity
-            android:name=".RegisterActivity"
->>>>>>> general
+            android:name=".ui.RegisterActivity"
             android:exported="false" />
         <activity
             android:name=".ui.MainActivity"

@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bg"
     tools:context=".ui.general.fragment.statistik.StatistikWilayahFragment">
 
     <ScrollView
@@ -11,8 +12,10 @@
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -242,14 +245,6 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="8dp">
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginEnd="16dp"
-                        android:layout_weight="1"
-                        android:text="Sta. Lucia"
-                        android:textSize="14sp" />
-
                 </TableRow>
 
                 <TableRow
@@ -370,6 +365,14 @@
                         android:text="Sta. Theresia Avilla"
                         android:textSize="14sp" />
 
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="16dp"
+                        android:layout_weight="1"
+                        android:text="Sta. Lucia"
+                        android:textSize="14sp" />
+
                 </TableRow>
 
                 <TableRow
@@ -386,12 +389,14 @@
                         android:textSize="14sp" />
 
                 </TableRow>
-
-
             </TableLayout>
 
-        </LinearLayout>
+            <com.anychart.AnyChartView
+                android:id="@+id/any_chart_view"
+                android:layout_width="match_parent"
+                android:layout_height="500dp" />
 
+        </LinearLayout>
     </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
