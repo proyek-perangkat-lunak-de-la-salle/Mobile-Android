@@ -86,5 +86,19 @@
     <string name="title_home">Kuesioner PJK</string>
     <string name="title_dashboard">Statistik Wilayah dan Paroki</string>
     <string name="title_notifications">Riwayat Deteksi</string>
+    <string name="hint_pilih_wilayah">Pilih Wilayah</string>
+    <string name="hint_pilih_jenis_kelamin">Pilih Jenis Kelamin</string>
+    <string name="hint_pilih_tinggi_badan">Pilih Tinggi Badan</string>
+    <string name="hint_berat_badan">Pilih Berat Badan</string>
+    <string name="hint_paham">Seberapa paham anda terkait PJK?</string>
+    <string name="hint_checkup_jantung">Pernah checkup jantung?</string>
+    <string name="hint_nyeri_dada">Nyeri dada sebelah kiri?</string>
+    <string name="hint_mual">Merasa mual saat aktivitas?</string>
+    <string name="hint_sesak_napas">Mengalami sesak napas saat aktivitas?</string>
+    <string name="hint_nyeri_ulu_hati">Nyeri ulu hati saat aktivitas?</string>
+    <string name="hint_riwayat_hipertensi">Memiliki riwayat hipertensi?</string>
+    <string name="hint_obesitas">Memiliki berat badan berlebih?</string>
+    <string name="hint_diabetes">Memiliki riwayat diabetes?</string>
+    <string name="hint_pjk">Memiliki riwayat Penyakit Jantung Koroner?</string>
 
 </resources>

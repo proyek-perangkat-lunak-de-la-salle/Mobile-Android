@@ -33,16 +33,16 @@
                 android:textStyle="bold" />
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/pilih_wilayah_layout"
+                android:id="@+id/wilayah_layout"
                 style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="8dp"
                 android:layout_marginTop="8dp"
-                android:hint="Pilih Wilayah">
+                android:hint="@string/hint_pilih_wilayah">
 
                 <AutoCompleteTextView
-                    android:id="@+id/autoCompletePilihWilayah"
+                    android:id="@+id/pilih_wilayah"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="none"
@@ -51,34 +51,16 @@
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/usia_edt_layout"
+                android:id="@+id/jenis_kelamin_layout"
                 style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="8dp"
                 android:layout_marginTop="8dp"
-                android:hint="Pilih Usia">
+                android:hint="@string/hint_pilih_jenis_kelamin">
 
                 <AutoCompleteTextView
-                    android:id="@+id/autoCompletePilihUsia"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:inputType="none"
-                    app:simpleItems="@array/umur" />
-
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/gender_edt_layout"
-                style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginHorizontal="8dp"
-                android:layout_marginTop="8dp"
-                android:hint="Pilih Jenis Kelamin">
-
-                <AutoCompleteTextView
-                    android:id="@+id/autoCompletePilihGender"
+                    android:id="@+id/pilih_jenis_kelamin"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="none"
@@ -87,52 +69,48 @@
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/tinggi_badan_edt_layout"
-                style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                android:id="@+id/tinggi_layout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="8dp"
                 android:layout_marginTop="8dp"
-                android:hint="Pilih Usia">
+                android:hint="@string/hint_pilih_tinggi_badan">
 
-                <AutoCompleteTextView
-                    android:id="@+id/autoCompletePilihTinggiBadan"
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_tinggi"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:inputType="none"
-                    app:simpleItems="@array/tinggi_badan" />
+                    android:inputType="number"/>
 
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/berat_badan_edt_layout"
-                style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                android:id="@+id/berat_badan_layout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="8dp"
                 android:layout_marginTop="8dp"
-                android:hint="Pilih Usia">
+                android:hint="@string/hint_berat_badan">
 
-                <AutoCompleteTextView
-                    android:id="@+id/autoCompletePilihBeratBadan"
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_berat_badan"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:inputType="none"
-                    app:simpleItems="@array/berat_badan" />
+                    android:inputType="number"
+                    android:layout_height="wrap_content" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/paham_pjk_edt_layout"
+                android:id="@+id/paham_layout"
                 style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="8dp"
                 android:layout_marginTop="8dp"
-                android:hint="Seberapa Paham Anda terkait PJK?">
+                android:hint="@string/hint_paham">
 
                 <AutoCompleteTextView
-                    android:id="@+id/autoCompletePahamPJK"
+                    android:id="@+id/pilih_paham"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="none"
@@ -140,18 +118,17 @@
 
             </com.google.android.material.textfield.TextInputLayout>
 
-
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/checkup_jantung_edt_layout"
+                android:id="@+id/checkup_jantung_layout"
                 style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="8dp"
                 android:layout_marginTop="8dp"
-                android:hint="Telah Checkup Jantung?">
+                android:hint="@string/hint_checkup_jantung">
 
                 <AutoCompleteTextView
-                    android:id="@+id/autoCompleteCheckupJantung"
+                    android:id="@+id/pilih_checkup_jantung"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="none"
@@ -161,16 +138,16 @@
 
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/Nyeri_dada_edt_layout"
+                android:id="@+id/nyeri_dada_layout"
                 style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="8dp"
                 android:layout_marginTop="8dp"
-                android:hint="Nyeri Dada?">
+                android:hint="@string/hint_nyeri_dada">
 
                 <AutoCompleteTextView
-                    android:id="@+id/autoCompleteNyeriDada"
+                    android:id="@+id/pilih_nyeri_dada"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="none"
@@ -180,16 +157,16 @@
 
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/mual_edt_layout"
+                android:id="@+id/mual_layout"
                 style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="8dp"
                 android:layout_marginTop="8dp"
-                android:hint="Mual?">
+                android:hint="@string/hint_mual">
 
                 <AutoCompleteTextView
-                    android:id="@+id/autoCompleteMual"
+                    android:id="@+id/pilih_mual"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="none"
@@ -199,16 +176,16 @@
 
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/sesak_napas_edt_layout"
+                android:id="@+id/sesak_napas_layout"
                 style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="8dp"
                 android:layout_marginTop="8dp"
-                android:hint="Sesak Napas?">
+                android:hint="@string/hint_sesak_napas">
 
                 <AutoCompleteTextView
-                    android:id="@+id/autoCompleteSesakNapas"
+                    android:id="@+id/pilih_sesak"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="none"
@@ -218,16 +195,16 @@
 
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/nyeri_ulu_hati_edt_layout"
+                android:id="@+id/nyeri_ulu_hati_layout"
                 style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="8dp"
                 android:layout_marginTop="8dp"
-                android:hint="Nyeri Ulu Hati?">
+                android:hint="@string/hint_nyeri_ulu_hati">
 
                 <AutoCompleteTextView
-                    android:id="@+id/autoCompleteNyeriUluHati"
+                    android:id="@+id/pilih_nyeri_ulu_hati"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="none"
@@ -237,16 +214,16 @@
 
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/hipertensi_edt_layout"
+                android:id="@+id/riwayat_hipertensi_layout"
                 style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="8dp"
                 android:layout_marginTop="8dp"
-                android:hint="Hipertensi?">
+                android:hint="@string/hint_riwayat_hipertensi">
 
                 <AutoCompleteTextView
-                    android:id="@+id/autoCompleteHipertensi"
+                    android:id="@+id/pilih_riwayat_hipertensi"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="none"
@@ -256,16 +233,35 @@
 
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/obesitas_edt_layout"
+                android:id="@+id/obesitas_layout"
                 style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="8dp"
                 android:layout_marginTop="8dp"
-                android:hint="Obesitas?">
+                android:hint="@string/hint_obesitas">
 
                 <AutoCompleteTextView
-                    android:id="@+id/autoCompleteObesitas"
+                    android:id="@+id/pilih_obesitas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="none"
+                    app:simpleItems="@array/yes_or_no" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/diabetes_layout"
+                style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="8dp"
+                android:hint="@string/hint_diabetes">
+
+                <AutoCompleteTextView
+                    android:id="@+id/pilih_diabetes"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="none"
@@ -274,34 +270,16 @@
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/diabetes_edt_layout"
+                android:id="@+id/riwayat_pjk_layout"
                 style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="8dp"
                 android:layout_marginTop="8dp"
-                android:hint="Diabetes?">
+                android:hint="@string/hint_pjk">
 
                 <AutoCompleteTextView
-                    android:id="@+id/autoCompleteDiabetes"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:inputType="none"
-                    app:simpleItems="@array/yes_or_no" />
-
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/genetika_edt_layout"
-                style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginHorizontal="8dp"
-                android:layout_marginTop="8dp"
-                android:hint="Obesitas?">
-
-                <AutoCompleteTextView
-                    android:id="@+id/autoCompleteGenetika"
+                    android:id="@+id/pilih_pjk"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="none"
