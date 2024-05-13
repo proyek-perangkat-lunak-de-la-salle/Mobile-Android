@@ -12,6 +12,7 @@
         <item>St. Joseph</item>
         <item>Sta. Cecilia</item>
         <item>Pacelli</item>
+        <item>St. Blasius</item>
         <item>Sta. Barbara</item>
         <item>Sta. Lucia</item>
         <item>Sta. Faustina</item>
@@ -22,7 +23,7 @@
         <item>St. Paulus</item>
         <item>St. Antonius</item>
         <item>Sta. Theresia Avilla</item>
-        <item>Bunda Hati Kudus</item>
+        <item>Bunda Hati Kudus(BHK)</item>
     </array>
 
     <array name="umur">
@@ -86,6 +87,7 @@
     <string name="title_home">Kuesioner PJK</string>
     <string name="title_dashboard">Statistik Wilayah dan Paroki</string>
     <string name="title_notifications">Riwayat Deteksi</string>
+    <string name="hint_field">Field tidak boleh kosong</string>
     <string name="hint_pilih_wilayah">Pilih Wilayah</string>
     <string name="hint_pilih_jenis_kelamin">Pilih Jenis Kelamin</string>
     <string name="hint_pilih_tinggi_badan">Pilih Tinggi Badan</string>
@@ -100,5 +102,15 @@
     <string name="hint_obesitas">Memiliki berat badan berlebih?</string>
     <string name="hint_diabetes">Memiliki riwayat diabetes?</string>
     <string name="hint_pjk">Memiliki riwayat Penyakit Jantung Koroner?</string>
+    <string name="hint_nama_layout">Masukan Nama Pengguna</string>
+    <string name="hint_username">Masukan Username</string>
+    <string name="hint_email">Masukan Email</string>
+    <string name="hint_tipe_pengguna">Pilih Tipe Pengguna</string>
+    <string name="hint_password">Masukan Password</string>
+    <string name="hint_konfirmasi_password">Konfirmasi Password</string>
+    <string name="daftar">Daftar</string>
+    <string name="data_diri_umat_dan_pertanyaan_pjk">Data Diri Umat dan Pertanyaan PJK</string>
+    <string name="submit">Kirim\n</string>
+    <string name="hint_usia">Masukan Usia</string>
 
 </resources>
