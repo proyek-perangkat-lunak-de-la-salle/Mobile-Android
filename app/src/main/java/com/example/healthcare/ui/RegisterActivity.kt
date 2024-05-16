@@ -37,7 +37,7 @@ class RegisterActivity : AppCompatActivity() {
             insets
         }
 
-        val factory = ViewModelFactory.getInstance()
+        val factory = ViewModelFactory.getInstance(this)
         val viewModel: RegisterViewModel by viewModels {
             factory
         }
