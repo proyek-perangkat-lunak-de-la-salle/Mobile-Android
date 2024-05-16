@@ -34,8 +34,8 @@
     </array>
 
     <array name="jenis_kelamin">
-        <item>Pria</item>
-        <item>Wanita</item>
+        <item>Laki - laki</item>
+        <item>Perempuan</item>
     </array>
 
     <array name="tinggi_badan">
@@ -66,22 +66,23 @@
     </array>
 
     <array name="nyeri">
-        <item>Tidak Nyeri</item>
-        <item>Cukup Nyeri</item>
-        <item>Sangat Nyeri</item>
+        <item>Tidak</item>
+        <item>Cukup</item>
+        <item>Sering</item>
     </array>
 
     <array name="mual">
-        <item>Tidak Mual</item>
-        <item>Cukup Mual</item>
-        <item>Sangat Mual</item>
+        <item>Tidak</item>
+        <item>Cukup</item>
+        <item>Sering</item>
     </array>
 
     <array name="sesak">
-        <item>Tidak Sesak Napas</item>
-        <item>Cukup Sesak Napas</item>
-        <item>Sangat Sesak Napas</item>
+        <item>Tidak</item>
+        <item>Cukup</item>
+        <item>Sering</item>
     </array>
+
 
     <string name="title_activity_general_user">GeneralUserActivity</string>
     <string name="title_home">Kuesioner PJK</string>
@@ -112,5 +113,21 @@
     <string name="data_diri_umat_dan_pertanyaan_pjk">Data Diri Umat dan Pertanyaan PJK</string>
     <string name="submit">Kirim\n</string>
     <string name="hint_usia">Masukan Usia</string>
+    <string name="numbering">No</string>
+    <string name="questions">Pertanyaan</string>
+    <string name="answers">Jawaban</string>
+    <string name="_1">1</string>
+    <string name="ten">10</string>
+    <string name="nine">9</string>
+    <string name="eight">8</string>
+    <string name="seven">7</string>
+    <string name="six">6</string>
+    <string name="five">5</string>
+    <string name="four">4</string>
+    <string name="three">3</string>
+    <string name="two">2</string>
+    <string name="one">1</string>
+    <string name="cluster_result">Hasil cluster merupakan %s</string>
+    <string name="hasil_deteksi_toolbar_title">Hasil Deteksi PJK</string>
 
 </resources>

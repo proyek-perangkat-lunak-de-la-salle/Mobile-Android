@@ -25,7 +25,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="start"
-            android:text="Hasil Deteksi PJK"
+            android:text="@string/hasil_deteksi_toolbar_title"
             android:textColor="@android:color/white"
             android:textSize="18sp"
             android:textStyle="bold" />
@@ -34,56 +34,17 @@
 
 
     <TextView
-        android:id="@+id/tv_resiko_rendah"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginVertical="16dp"
-        android:paddingHorizontal="8dp"
-        android:text="C1 : Resiko PJK Rendah"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/toolbar" />
-
-    <TextView
-        android:id="@+id/tv_resiko_menengah"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginVertical="16dp"
-        android:paddingHorizontal="8dp"
-        android:text="C2 : Resiko PJK Sedang"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv_resiko_rendah" />
-
-    <TextView
-        android:id="@+id/tv_resiko_tinggi"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginVertical="16dp"
-        android:paddingHorizontal="8dp"
-        android:text="C2 : Resiko PJK Tinggi"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv_resiko_menengah" />
-
-    <TextView
         android:id="@+id/tv_hasil_cluster"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginVertical="16dp"
         android:paddingHorizontal="8dp"
-        android:text="Hasil cluster merupakan : "
+        android:text="@string/cluster_result"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_resiko_tinggi" />
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
 
 
     <TableLayout
@@ -106,7 +67,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="No"
+                android:text="@string/numbering"
                 android:textSize="14sp" />
 
             <TextView
@@ -114,7 +75,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
                 android:padding="4dp"
-                android:text="Pertanyaan"
+                android:text="@string/questions"
                 android:textSize="14sp" />
 
             <TextView
@@ -122,7 +83,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:padding="4dp"
-                android:text="Jawaban"
+                android:text="@string/answers"
                 android:textSize="14sp" />
 
         </TableRow>
@@ -136,7 +97,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="1"
+                android:text="@string/one"
                 android:textSize="14sp" />
 
             <TextView
@@ -144,7 +105,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
                 android:padding="4dp"
-                android:text="Pertanyaan"
+                android:text="@string/questions"
                 android:textSize="14sp" />
 
             <TextView
@@ -152,7 +113,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:padding="4dp"
-                android:text="Jawaban"
+                android:text="@string/answers"
                 android:textSize="14sp" />
 
         </TableRow>
@@ -166,7 +127,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="2"
+                android:text="@string/two"
                 android:textSize="14sp" />
 
             <TextView
@@ -174,7 +135,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
                 android:padding="4dp"
-                android:text="Pertanyaan"
+                android:text="@string/questions"
                 android:textSize="14sp" />
 
             <TextView
@@ -182,7 +143,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:padding="4dp"
-                android:text="Jawaban"
+                android:text="@string/answers"
                 android:textSize="14sp" />
 
         </TableRow>
@@ -196,7 +157,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="3"
+                android:text="@string/three"
                 android:textSize="14sp" />
 
             <TextView
@@ -204,7 +165,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
                 android:padding="4dp"
-                android:text="Pertanyaan"
+                android:text="@string/questions"
                 android:textSize="14sp" />
 
             <TextView
@@ -212,7 +173,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:padding="4dp"
-                android:text="Jawaban"
+                android:text="@string/answers"
                 android:textSize="14sp" />
 
         </TableRow>
@@ -226,7 +187,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="4"
+                android:text="@string/four"
                 android:textSize="14sp" />
 
             <TextView
@@ -234,7 +195,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
                 android:padding="4dp"
-                android:text="Pertanyaan"
+                android:text="@string/questions"
                 android:textSize="14sp" />
 
             <TextView
@@ -242,7 +203,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:padding="4dp"
-                android:text="Jawaban"
+                android:text="@string/answers"
                 android:textSize="14sp" />
 
         </TableRow>
@@ -256,7 +217,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="5"
+                android:text="@string/five"
                 android:textSize="14sp" />
 
             <TextView
@@ -264,7 +225,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
                 android:padding="4dp"
-                android:text="Pertanyaan"
+                android:text="@string/questions"
                 android:textSize="14sp" />
 
             <TextView
@@ -272,7 +233,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:padding="4dp"
-                android:text="Jawaban"
+                android:text="@string/answers"
                 android:textSize="14sp" />
 
         </TableRow>
@@ -287,7 +248,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="6"
+                android:text="@string/six"
                 android:textSize="14sp" />
 
             <TextView
@@ -295,7 +256,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
                 android:padding="4dp"
-                android:text="Pertanyaan"
+                android:text="@string/questions"
                 android:textSize="14sp" />
 
             <TextView
@@ -303,7 +264,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:padding="4dp"
-                android:text="Jawaban"
+                android:text="@string/answers"
                 android:textSize="14sp" />
 
         </TableRow>
@@ -317,7 +278,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="7"
+                android:text="@string/seven"
                 android:textSize="14sp" />
 
             <TextView
@@ -325,7 +286,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
                 android:padding="4dp"
-                android:text="Pertanyaan"
+                android:text="@string/questions"
                 android:textSize="14sp" />
 
             <TextView
@@ -333,7 +294,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:padding="4dp"
-                android:text="Jawaban"
+                android:text="@string/answers"
                 android:textSize="14sp" />
 
         </TableRow>
@@ -347,7 +308,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="8"
+                android:text="@string/eight"
                 android:textSize="14sp" />
 
             <TextView
@@ -355,7 +316,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
                 android:padding="4dp"
-                android:text="Pertanyaan"
+                android:text="@string/questions"
                 android:textSize="14sp" />
 
             <TextView
@@ -363,7 +324,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:padding="4dp"
-                android:text="Jawaban"
+                android:text="@string/answers"
                 android:textSize="14sp" />
 
         </TableRow>
@@ -377,7 +338,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="9"
+                android:text="@string/nine"
                 android:textSize="14sp" />
 
             <TextView
@@ -385,7 +346,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
                 android:padding="4dp"
-                android:text="Pertanyaan"
+                android:text="@string/questions"
                 android:textSize="14sp" />
 
             <TextView
@@ -393,7 +354,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:padding="4dp"
-                android:text="Jawaban"
+                android:text="@string/answers"
                 android:textSize="14sp" />
 
         </TableRow>
@@ -407,7 +368,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="10"
+                android:text="@string/ten"
                 android:textSize="14sp" />
 
             <TextView
@@ -415,7 +376,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
                 android:padding="4dp"
-                android:text="Pertanyaan"
+                android:text="@string/questions"
                 android:textSize="14sp" />
 
             <TextView
@@ -423,21 +384,10 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:padding="4dp"
-                android:text="Jawaban"
+                android:text="@string/answers"
                 android:textSize="14sp" />
         </TableRow>
     </TableLayout>
-
-    <Button
-        android:id="@+id/btn_unduh"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="8dp"
-        android:layout_marginVertical="16dp"
-        android:text="Unduh"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tableHasilDeteksi" />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -445,7 +395,7 @@
         android:layout_marginVertical="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/btn_unduh">
+        app:layout_constraintTop_toBottomOf="@id/tableHasilDeteksi">
 
         <LinearLayout
             android:layout_width="match_parent"

@@ -10,6 +10,9 @@ data class LoginResponse(
 	@field:SerializedName("message")
 	val message: String,
 
+	@field:SerializedName("userId")
+	val userId: Int,
+
 	@field:SerializedName("token")
 	val token: String
 )

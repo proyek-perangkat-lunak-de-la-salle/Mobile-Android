@@ -7,6 +7,8 @@ import com.example.healthcare.data.pref.UserModel
 import com.example.healthcare.data.pref.UserPref
 import com.example.healthcare.data.remote.api.ApiService
 import com.example.healthcare.data.remote.model.LoginResponse
+import com.example.healthcare.data.remote.model.Questioner
+import com.example.healthcare.data.remote.model.QuestionerResponse
 import com.example.healthcare.data.remote.model.RegisterResponse
 import com.example.healthcare.data.remote.model.UserLogin
 import com.example.healthcare.data.remote.model.UserRegister
@@ -21,6 +23,8 @@ class UserRepository private constructor(val apiService: ApiService, val userPre
     val result = MutableLiveData<Result<RegisterResponse>>()
 
     val resultLogin = MutableLiveData<Result<LoginResponse>>()
+
+    val resultFormGeneral = MutableLiveData<Result<QuestionerResponse>>()
 
     fun registerUser(user: UserRegister): LiveData<Result<RegisterResponse>> {
         result.value = Result.Loading
@@ -79,6 +83,34 @@ class UserRepository private constructor(val apiService: ApiService, val userPre
 
     suspend fun logout() {
         userPref.logout()
+    }
+
+    fun submitForm(token: String, form: Questioner): LiveData<Result<QuestionerResponse>> {
+        resultFormGeneral.value = Result.Loading
+        val client = apiService.submitQuestioners("Bearer $token", form)
+
+        client.enqueue(object : Callback<QuestionerResponse> {
+            override fun onResponse(
+                call: Call<QuestionerResponse>,
+                response: Response<QuestionerResponse>
+            ) {
+                if (response.isSuccessful) {
+                    if (response.body() != null) {
+                        resultFormGeneral.value = Result.Success(response.body()!!)
+                    } else {
+                        Log.d(TAG, "onResponse: ${response.message()}")
+                    }
+                }
+            }
+
+            override fun onFailure(call: Call<QuestionerResponse>, t: Throwable) {
+                resultFormGeneral.value = Result.Error(t.message.toString())
+                Log.d(TAG, "onFailure: ${t.message}")
+            }
+
+        })
+
+        return resultFormGeneral
     }
 
     companion object {

@@ -65,7 +65,7 @@ class MainActivity : AppCompatActivity() {
 
                     is Result.Success -> {
                         setLoading(false)
-                        val session = UserModel(it.data.token, it.data.token, true)
+                        val session = UserModel(it.data.token, it.data.token, it.data.userId, true)
                         viewModel.saveSession(session)
 
                         when (it.data.role) {
