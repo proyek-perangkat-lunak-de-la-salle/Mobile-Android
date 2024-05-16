@@ -1,18 +1,26 @@
 package com.example.healthcare.data
 
+import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
+import com.example.healthcare.data.pref.UserModel
+import com.example.healthcare.data.pref.UserPref
 import com.example.healthcare.data.remote.api.ApiService
+import com.example.healthcare.data.remote.model.LoginResponse
 import com.example.healthcare.data.remote.model.RegisterResponse
+import com.example.healthcare.data.remote.model.UserLogin
 import com.example.healthcare.data.remote.model.UserRegister
 import com.example.healthcare.helper.Result
+import kotlinx.coroutines.flow.Flow
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
-class UserRepository private constructor(val apiService: ApiService) {
+class UserRepository private constructor(val apiService: ApiService, val userPref: UserPref) {
 
     val result = MutableLiveData<Result<RegisterResponse>>()
+
+    val resultLogin = MutableLiveData<Result<LoginResponse>>()
 
     fun registerUser(user: UserRegister): LiveData<Result<RegisterResponse>> {
         result.value = Result.Loading
@@ -31,10 +39,46 @@ class UserRepository private constructor(val apiService: ApiService) {
 
             override fun onFailure(call: Call<RegisterResponse>, t: Throwable) {
                 result.value = Result.Error(t.message.toString())
+                Log.d(TAG, "onFailure: ${t.message}")
             }
 
         })
         return result
+    }
+
+    fun loginUser(user: UserLogin): LiveData<Result<LoginResponse>> {
+        resultLogin.value = Result.Loading
+        val client = apiService.login(user)
+        client.enqueue(object : Callback<LoginResponse> {
+            override fun onResponse(call: Call<LoginResponse>, response: Response<LoginResponse>) {
+                if (response.isSuccessful) {
+                    if (response.body() != null) {
+                        resultLogin.value = Result.Success(response.body()!!)
+                        Log.d(TAG, "onResponse: ${response.body()!!.role}")
+                    }
+                } else {
+                    resultLogin.value = Result.Error(response.message())
+                }
+            }
+
+            override fun onFailure(call: Call<LoginResponse>, t: Throwable) {
+                resultLogin.value = Result.Error(t.message.toString())
+                Log.d(TAG, "onFailure: ${t.message}")
+            }
+
+        })
+
+        return resultLogin
+    }
+
+    suspend fun saveSession(user: UserModel) {
+        userPref.saveSession(user)
+    }
+
+    fun getSession(): Flow<UserModel> = userPref.getSession()
+
+    suspend fun logout() {
+        userPref.logout()
     }
 
     companion object {
@@ -42,10 +86,10 @@ class UserRepository private constructor(val apiService: ApiService) {
         private var INSTANCE: UserRepository? = null
 
         @JvmStatic
-        fun getInstance(apiService: ApiService): UserRepository {
+        fun getInstance(apiService: ApiService, userPref: UserPref): UserRepository {
             if (INSTANCE == null) {
                 synchronized(this) {
-                    INSTANCE = UserRepository(apiService)
+                    INSTANCE = UserRepository(apiService, userPref)
                 }
             }
             return INSTANCE as UserRepository

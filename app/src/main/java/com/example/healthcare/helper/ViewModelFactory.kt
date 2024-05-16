@@ -1,9 +1,11 @@
 package com.example.healthcare.helper
 
+import android.content.Context
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import com.example.healthcare.data.UserRepository
 import com.example.healthcare.data.di.Injection
+import com.example.healthcare.ui.MainViewModel
 import com.example.healthcare.ui.RegisterViewModel
 
 class ViewModelFactory private constructor(private val userRepository: UserRepository) : ViewModelProvider.NewInstanceFactory() {
@@ -12,6 +14,9 @@ class ViewModelFactory private constructor(private val userRepository: UserRepos
         if(modelClass.isAssignableFrom(RegisterViewModel::class.java)) {
             return RegisterViewModel(userRepository) as T
         }
+        if(modelClass.isAssignableFrom(MainViewModel::class.java)) {
+            return MainViewModel(userRepository) as T
+        }
         throw IllegalArgumentException("Unknown ViewModel class: " + modelClass.name)
     }
 
@@ -19,10 +24,10 @@ class ViewModelFactory private constructor(private val userRepository: UserRepos
         @Volatile
         private var INSTANCE: ViewModelFactory? = null
 
-        fun getInstance(): ViewModelFactory {
+        fun getInstance(context: Context): ViewModelFactory {
             if(INSTANCE == null) {
                 synchronized(this) {
-                    INSTANCE = ViewModelFactory(Injection.provideRepository())
+                    INSTANCE = ViewModelFactory(Injection.provideRepository(context))
                 }
             }
             return INSTANCE as ViewModelFactory
