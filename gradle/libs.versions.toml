@@ -17,6 +17,9 @@ navigationUiKtx = "2.7.7"
 datastorePreferences = "1.0.0"
 kotlinxCoroutinesAndroid = "1.5.2"
 kotlinxCoroutinesCore = "1.5.2"
+mockito = "4.4.0"
+
+#   testImplementation("org.mockito:mockito-core:4.4.0")
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -34,6 +37,10 @@ androidx-navigation-ui-ktx = { group = "androidx.navigation", name = "navigation
 androidx-datastore-preferences = { module = "androidx.datastore:datastore-preferences", version.ref = "datastorePreferences" }
 jetbrains-kotlinx-coroutines-android = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "kotlinxCoroutinesAndroid" }
 kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "kotlinxCoroutinesCore" }
+mockito-core = { group = "org.mockito", name = "mockito-core", version.ref = "mockito" }
+mockito-inline = { module = "org.mockito:mockito-inline", version.ref = "mockito" }
+
+
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }

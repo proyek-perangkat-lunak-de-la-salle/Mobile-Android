@@ -8,6 +8,7 @@ import com.example.healthcare.data.di.Injection
 import com.example.healthcare.ui.MainViewModel
 import com.example.healthcare.ui.RegisterViewModel
 import com.example.healthcare.ui.general.fragment.kuesioner.QuestionerViewModel
+import com.example.healthcare.ui.general.fragment.riwayat.RiwayatDeteksiViewModel
 
 class ViewModelFactory private constructor(private val userRepository: UserRepository) : ViewModelProvider.NewInstanceFactory() {
     @Suppress("UNCHECKED_CAST")
@@ -20,6 +21,9 @@ class ViewModelFactory private constructor(private val userRepository: UserRepos
         }
         if(modelClass.isAssignableFrom(QuestionerViewModel::class.java)) {
             return QuestionerViewModel(userRepository) as T
+        }
+        if(modelClass.isAssignableFrom(RiwayatDeteksiViewModel::class.java)) {
+            return RiwayatDeteksiViewModel(userRepository) as T
         }
         throw IllegalArgumentException("Unknown ViewModel class: " + modelClass.name)
     }

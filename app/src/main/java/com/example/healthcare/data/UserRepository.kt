@@ -6,6 +6,7 @@ import androidx.lifecycle.MutableLiveData
 import com.example.healthcare.data.pref.UserModel
 import com.example.healthcare.data.pref.UserPref
 import com.example.healthcare.data.remote.api.ApiService
+import com.example.healthcare.data.remote.model.HistoryResponseItem
 import com.example.healthcare.data.remote.model.LoginResponse
 import com.example.healthcare.data.remote.model.Questioner
 import com.example.healthcare.data.remote.model.QuestionerResponse
@@ -25,6 +26,8 @@ class UserRepository private constructor(val apiService: ApiService, val userPre
     val resultLogin = MutableLiveData<Result<LoginResponse>>()
 
     val resultFormGeneral = MutableLiveData<Result<QuestionerResponse>>()
+
+    val resultHistory = MutableLiveData<Result<List<HistoryResponseItem>>>()
 
     fun registerUser(user: UserRegister): LiveData<Result<RegisterResponse>> {
         result.value = Result.Loading
@@ -111,6 +114,33 @@ class UserRepository private constructor(val apiService: ApiService, val userPre
         })
 
         return resultFormGeneral
+    }
+
+    fun getUserHistory(userId: Int): LiveData<Result<List<HistoryResponseItem>>> {
+        resultHistory.value = Result.Loading
+        val client = apiService.getHistory(userId)
+
+        client.enqueue(object: Callback<List<HistoryResponseItem>>{
+            override fun onResponse(
+                call: Call<List<HistoryResponseItem>>,
+                response: Response<List<HistoryResponseItem>>
+            ) {
+                if(response.isSuccessful) {
+                    if(response.body() != null) {
+                        resultHistory.value = Result.Success(response.body()!!)
+                    } else {
+                        Log.d(TAG, "onResponse: ${response.message()}")
+                    }
+                }
+            }
+
+            override fun onFailure(call: Call<List<HistoryResponseItem>>, t: Throwable) {
+                resultHistory.value = Result.Error("${t.message}")
+                Log.d(TAG, "onFailure: ${t.message}")
+            }
+        })
+
+        return resultHistory
     }
 
     companion object {

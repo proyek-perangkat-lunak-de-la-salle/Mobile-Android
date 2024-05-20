@@ -53,6 +53,11 @@ class HasilDeteksiGeneralActivity : AppCompatActivity() {
 
     }
 
+    override fun onBackPressed() {
+        super.onBackPressed()
+
+    }
+
     companion object {
         const val EXTRA_DATA = "extra_data"
         const val EXTRA_ANSWER = "extra_answer"
